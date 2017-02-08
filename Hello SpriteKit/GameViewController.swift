@@ -8,7 +8,7 @@ class GameViewController: UIViewController {
       
       /*
       The default view for the view controller is cast to an SKView.
-      This type fo view can display an SKScene.
+      This type of view can display an SKScene.
       */
       if let view = self.view as! SKView? {
         let scene = SKScene(size: view.bounds.size)
