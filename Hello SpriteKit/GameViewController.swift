@@ -11,12 +11,13 @@ class GameViewController: UIViewController {
       This type of view can display an SKScene.
       */
       if let view = self.view as! SKView? {
-        let scene = SKScene(size: view.bounds.size)
+        let scene = GameScene(size: view.bounds.size)
         
         scene.scaleMode = .aspectFill
         view.ignoresSiblingOrder = true
         view.showsFPS = true
         view.showsNodeCount = true
+        view.isUserInteractionEnabled = true
         
         view.presentScene(scene)
       }
